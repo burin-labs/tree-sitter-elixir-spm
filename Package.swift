@@ -9,6 +9,7 @@ let package = Package(
             name: "TreeSitterElixir",
             path: "Sources/TreeSitterElixir",
             sources: ["src/parser.c", "src/scanner.c"],
+            resources: [.copy("queries")],
             publicHeadersPath: "include",
             cSettings: [.headerSearchPath("src")]
         )
